@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 18px/1.1em Roboto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 105%;
+}
+.container{
+    --bs-gutter-x: 0;
+}
+
+.navUp{
+    background: url(https://theme644-clothes-free.myshopify.com/cdn/shop/t/2/assets/suitup_top_banner.png?v=11381325228835922861553076005) ;
+    height: 100%;
+    padding: 15px;
+    display: grid;
+    max-width: 100%;
+    
+}
+.navUp .row{
+    color: white;
+    /* display: flex; */
+    text-align: center;
+    align-items: center;
+    
+}
+
+.navUp p{
+    margin-bottom:0;
+    
+}
+.navUp b{
+    font-weight: 700;
+    
+}
+.navUp h3{
+    font-size: 93%;
+    
+    margin: auto;
+    font-weight: 300;
+
+}
+.navUp button{
+    font-size: 60%;
+    font-weight: 600;
+    border: none;
+    padding: 11px 20px;
+    background-color: #FFF;
+    transition: .3s ease;
+}
+.navUp button:hover{
+    background-color: black;
+    color: #FFF;
+    transition: .3s ease;
+}
+.navUp .row .col-4,
+.navUp .row .col-5,
+.navUp .row .col-3 {
+    align-items: center;
+   
+}
