@@ -10,6 +10,10 @@
     font-weight: 300;
     font-size: 105%;
 }
+body{
+    background-color: rgb(249,250,252);
+
+}
 .container{
     --bs-gutter-x: 0;
 }
@@ -63,4 +67,60 @@
 .navUp .row .col-3 {
     align-items: center;
    
+}
+
+#searchBlock{
+    color: rgb(189,189,189);
+    font-size: 11px;font-weight: 700;
+    letter-spacing: .1em;
+    
+}
+#searchBlock p,.navSearchToggle b{
+    font-weight: 700;
+}
+
+#USD{
+    background-color: rgb(249,250,252);
+    border: none;
+    cursor: pointer;
+    color: rgb(189,189,189);
+    font-weight: 700;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.arrow-container {
+    position: relative;
+    display: inline-block;
+}
+
+.arrow {
+    position: absolute;
+    top: 45%;
+    right: -15px; /* Adjust the right spacing according to your design */
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 6px 0 6px;
+    border-color: rgb(189,202,221) transparent transparent transparent;
+    transition: transform 0.3s ease; /* Adding transition for a smooth effect */
+    cursor: pointer;
+}
+
+.arrow.flipped {
+    transform: translateY(-50%) rotate(180deg);
+}
+#searchBlock p{
+    margin-top: 10px;
+}
+.navSearchToggle span{
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition:color .3s;
+}
+.navSearchToggle span:hover{
+    color: #6fcfb8;
+    transition: .3s;
 }
