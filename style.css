@@ -89,23 +89,26 @@ body{
     -webkit-appearance: none;
 }
 
+.arrow:hover{
+    border-color:#6fcfb8 transparent transparent transparent ;
+}
+
 .arrow-container {
     position: relative;
     display: inline-block;
 }
-
 .arrow {
     position: absolute;
     top: 45%;
-    right: -15px; /* Adjust the right spacing according to your design */
+    right: -15px; 
     transform: translateY(-50%);
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 6px 6px 0 6px;
     border-color: rgb(189,202,221) transparent transparent transparent;
-    transition: transform 0.3s ease; /* Adding transition for a smooth effect */
-    cursor: pointer;
+    transition: transform 0.3s ease; 
+  
 }
 
 .arrow.flipped {
@@ -124,3 +127,5 @@ body{
     color: #6fcfb8;
     transition: .3s;
 }
+
+
