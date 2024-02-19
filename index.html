@@ -28,23 +28,24 @@
     </div>
 
     <div class="container">
-        <div class="row">
-                <div class="col-6 orderOnline" id="searchBlock">
+        <div class="row container-fluid ">
+                <div class="col-12 col-lg-6 orderOnline justify-content-center justify-content-lg-start text-center text-lg-start   " id="searchBlock">
                     <span>ORDER ONLINE OR CALL US (1800) 000 8808</span>
                 </div>
 
-                <div class="col-6 text-end" id="searchBlock">
+                <div class="col-12 col-lg-6 text-center  text-lg-end " id="searchBlock">
                     <div class="navSearchMenu">
-                        <div class="navSearchToggle">
+                        <div class="navSearchToggle justify-content-center  justify-content-lg-end ">
 
-                            <form action="">
+                            <form id="searchForm" style="display: none;" action=""> <!--1200 den öncesi bozuluyo  -->
                                 <input type="text" placeholder="Search" class="formInput">
-                                <button></button>
+                                <button class="navInputSearch"><i class="bi bi-search"></i></button>
+                                <i class="bi bi-x-lg  biSearchX" style="font-weight: 900;font-size: 100%; color:red;"></i>
                             </form>
 
-                            <span>
-                                <i class="bi bi-search"></i>
-                               <a href="#"><b>SEARCH</b></a>
+                            <span style="display: flex;">
+                                <i class="bi bi-search biSearchSmall me-1 "></i>
+                               <a class="searchButton" href="#"><b>SEARCH</b></a>
                             </span>
                             
 

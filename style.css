@@ -114,14 +114,15 @@ body{
 .arrow.flipped {
     transform: translateY(-50%) rotate(180deg);
 }
-.orderOnline,.navSearchToggle{
+.orderOnline{
     margin-top: 10px;
 }
 .navSearchToggle{
     display:  flex;
-}
-.navSearchToggle span{
     
+}
+.navSearchToggle span,.toggle2{
+    margin-top: 10px;
     margin-right: 10px;
     cursor: pointer;
     transition:color .3s;
@@ -143,11 +144,34 @@ body{
     color: #bdbdbd;
     font-size: 14px;
     padding: 6px 10px;
-    /* font-weight: 600; */
 }
 .formInput:focus{
     border: 1px solid #999999;
     outline: none;
     border-radius: 0%;
 }
+.navSearchToggle form{
+    position: relative;
+}
+.navSearchToggle form .navInputSearch{
+    border: none;
+    background-color: #FFF;
+    
+}
+.navSearchToggle form .navInputSearch i{
+    color: black;
+    font-weight: 900;
+    font-size: 150%;
+    position: absolute;
+    top: 20%;
+    right: 30px;
+}
+.biSearchX{
+    cursor: pointer;
+    border: none;
+    background-color: rgb(249,250,252);
+}
 
+
+
+  
