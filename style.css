@@ -173,5 +173,12 @@ body{
 }
 
 
+.headerLinks{
+    font-size: 18px;
+    color: #6fcfb8;
+    font-weight: 700;
+}
 
-  
+.nav-link:focus, .nav-link:hover {
+    color: #6fcfb8;
+}

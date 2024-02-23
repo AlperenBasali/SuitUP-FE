@@ -34,5 +34,19 @@ biSearchX.addEventListener("click",function(){
 })
 
 
+function openDropdown(){
+    navDropdownMenu = document.querySelector(".navDropdownMenus")
+    navDropdownMenu.classList.toggle("show")
+}
 
-  
+function closeDropdown(){
+    
+    
+    
+    timeoutId = setTimeout(function() {
+
+        console.log("Mouse left after delay");
+        navDropdownMenu = document.querySelector(".navDropdownMenus")
+        navDropdownMenu.classList.toggle("show")
+    }, 1000);
+}
