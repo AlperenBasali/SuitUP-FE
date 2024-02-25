@@ -33,20 +33,22 @@ biSearchX.addEventListener("click",function(){
     biSearchSmall.style.display="block"
 })
 
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
 
 function openDropdown(){
     navDropdownMenu = document.querySelector(".navDropdownMenus")
-    navDropdownMenu.classList.toggle("show")
+    navDropdownMenu.classList.add("show")
+   
 }
 
-function closeDropdown(){
-    
-    
-    
+function closeDropdown(){ //herhangi bir yere onclick="closeDropdown()" bunu ata
+
     timeoutId = setTimeout(function() {
-
-        console.log("Mouse left after delay");
+        
         navDropdownMenu = document.querySelector(".navDropdownMenus")
-        navDropdownMenu.classList.toggle("show")
+        navDropdownMenu.classList.remove("show")
     }, 1000);
+    
 }
+

@@ -9,6 +9,7 @@
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 105%;
+    
 }
 body{
     background-color: rgb(249,250,252);
@@ -71,7 +72,8 @@ body{
 /* ######################################## */
 #searchBlock{
     color: rgb(189,189,189);
-    font-size: 11px;font-weight: 700;
+    font-size: 11px;
+    font-weight: 700;
     letter-spacing: .1em;
     
 }
@@ -177,5 +179,23 @@ body{
 }
 
 .nav-link:focus, .nav-link:hover {
+    color: #6fcfb8;
+}
+
+.navDropdownMenus{
+    border-radius: 0%;
+    padding: 1rem .5rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px .5px 5px; background-color: rgb(249,250,252);
+    background-color: #FFF;
+    position: absolute;
+    top: 40px;
+   
+}
+.navDropdownMenus li a{
+    color: #bdbdbd;
+    font-size: 80%;
+}
+.navDropdownMenus li a:hover{
     color: #6fcfb8;
 }
