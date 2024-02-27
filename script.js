@@ -35,10 +35,21 @@ biSearchX.addEventListener("click",function(){
 
 //////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
-
+function clickDropdownHome(){
+    navDropdownMenu = document.querySelector(".navHome")
+    navDropdownMenu.classList.add("show")
+    navDropdownMenu.classList.remove("show")
+    // navDropdownMenu.classList.toggle("show")
+}
 function openDropdownHome(){
     navDropdownMenu = document.querySelector(".navHome")
     navDropdownMenu.classList.add("show")
+    navDropdownMenu = document.querySelector(".navCategories")
+    navDropdownMenu.classList.remove("show")
+    navDropdownMenu = document.querySelector(".navSale")
+    navDropdownMenu.classList.remove("showSale")
+    navDropdownMenu = document.querySelector(".navCart")
+    navDropdownMenu.classList.remove("show")
 }
 function closeDropdownHome(){ //herhangi bir yere onclick="closeDropdown()" bunu ata
     timeoutId = setTimeout(function() {
@@ -47,9 +58,22 @@ function closeDropdownHome(){ //herhangi bir yere onclick="closeDropdown()" bunu
     }, 1000);
 }
 
+function clickDropdownCategories(){
+    navDropdownMenu = document.querySelector(".navCategories")
+    navDropdownMenu.classList.add("show")
+    navDropdownMenu.classList.remove("show")
+}
+
 function openDropdownCategories(){
     navDropdownMenu = document.querySelector(".navCategories")
     navDropdownMenu.classList.add("show")
+    navDropdownMenu = document.querySelector(".navHome")
+    navDropdownMenu.classList.remove("show")
+    navDropdownMenu = document.querySelector(".navSale")
+    navDropdownMenu.classList.remove("showSale")
+    navDropdownMenu = document.querySelector(".navCart")
+    navDropdownMenu.classList.remove("show")
+
 }
 function closeDropdownCategories(){ //herhangi bir yere onclick="closeDropdown()" bunu ata
     timeoutId = setTimeout(function() {
@@ -58,9 +82,24 @@ function closeDropdownCategories(){ //herhangi bir yere onclick="closeDropdown()
     }, 1000);
 }
 
+
+function clickDropdownSale(){
+    navDropdownMenu = document.querySelector(".navSale")
+    navDropdownMenu.classList.add("showSale")
+    navDropdownMenu.classList.remove("showSale")
+}
+
+
 function openDropdownSale(){
     navDropdownMenu = document.querySelector(".navSale")
     navDropdownMenu.classList.add("showSale")
+    navDropdownMenu = document.querySelector(".navHome")
+    navDropdownMenu.classList.remove("show")
+    navDropdownMenu = document.querySelector(".navCategories")
+    navDropdownMenu.classList.remove("show")
+    navDropdownMenu = document.querySelector(".navCart")
+    navDropdownMenu.classList.remove("show")
+
 }
 function closeDropdownSale(){ //herhangi bir yere onclick="closeDropdown()" bunu ata
     timeoutId = setTimeout(function() {
@@ -68,3 +107,29 @@ function closeDropdownSale(){ //herhangi bir yere onclick="closeDropdown()" bunu
         navDropdownMenu.classList.remove("showSale")
     }, 1000);
 }
+
+
+function clickDropdownCart(){
+    navDropdownMenu = document.querySelector(".navCart")
+    navDropdownMenu.classList.add("show")
+    navDropdownMenu.classList.remove("show")
+}
+
+function openDropdownCart(){
+    navDropdownMenu = document.querySelector(".navCart")
+    navDropdownMenu.classList.add("show")
+    navDropdownMenu = document.querySelector(".navHome")
+    navDropdownMenu.classList.remove("show")
+    navDropdownMenu = document.querySelector(".navCategories")
+    navDropdownMenu.classList.remove("show")
+    navDropdownMenu = document.querySelector(".navSale")
+    navDropdownMenu.classList.remove("showSale")
+
+}
+function closeDropdownCart(){ //herhangi bir yere onclick="closeDropdown()" bunu ata
+    timeoutId = setTimeout(function() {
+        navDropdownMenu = document.querySelector(".navCart")
+        navDropdownMenu.classList.remove("show")
+    }, 1000);
+}
+//mobil görüntü

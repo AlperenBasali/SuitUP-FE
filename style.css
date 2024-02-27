@@ -171,7 +171,7 @@ body{
     background-color: rgb(249,250,252);
 }
 
-
+/* ************************************************************************* */
 .headerLinks1{
     font-size: 18px;
     color: #6fcfb8;
@@ -222,4 +222,9 @@ body{
     position: absolute;
     top: 60px;
     justify-content: space-around;
+}
+
+.navCart{
+    overflow-y: scroll;
+    max-height: 80vh;
 }
