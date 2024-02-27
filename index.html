@@ -80,16 +80,16 @@
 
   <div class="bigContainer"style="width: 100%;box-shadow: rgba(0, 0, 0, 0.04) 0px .5px 5px; background-color: rgb(249,250,252);margin-top:10px ">
     <div class="container-fluid container-xl ">
-        <div class="row" style="padding: 18px 0;">
+        <div class="row" style="padding: 18px 0;position: relative;">
             <div class="col-3">
                 <img src="https://theme644-clothes-free.myshopify.com/cdn/shop/files/logo_100x30_crop_center.png?v=1614290115" alt="">
             </div>
             <div class="col-3">
                 <li class="nav-item dropdown list-unstyled d-flex"style="position: relative; ">
-                    <a class="nav-link headerLinks" onmouseover="openDropdown(this)"   href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link headerLinks1" onmouseover="openDropdownHome()"   href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                        Home
                     </a>
-                    <ul class="dropdown-menu navDropdownMenus" onmouseleave="closeDropdown(this)">
+                    <ul class="dropdown-menu navDropdownMenus navHome" onmouseleave="closeDropdownHome()">
                       <li><a class="dropdown-item" href="#">Home</a></li>
                       <li><a class="dropdown-item" href="#">Catalog</a></li>
                     </ul>
@@ -98,16 +98,40 @@
 
             <div class="col-3">
                 <li class="nav-item dropdown list-unstyled d-flex"style="position: relative; ">
-                    <a class="nav-link headerLinks" onmouseover="openDropdown(this)"   href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link headerLinks" onmouseover="openDropdownCategories()"   href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                        Categories
                     </a>
-                    <ul class="dropdown-menu navDropdownMenus" onmouseleave="closeDropdown(this)">
-                      <li><a class="dropdown-item" href="#">Homdassdaade</a></li>
-                      <li><a class="dropdown-item" href="#">Catadsadsalog</a></li>
+                    <ul class="dropdown-menu navDropdownMenus navCategories" onmouseleave="closeDropdownCategories()">
+                        <li><a class="dropdown-item" href="#">Men's clothing</a></li>
+                        <li><a class="dropdown-item" href="#">Women's clothing</a></li>
+                        <li><a class="dropdown-item" href="#">Teens clothing</a></li>
+                        <li><a class="dropdown-item" href="#">Children's clothing</a></li>
+                        <li><a class="dropdown-item" href="#">Sportswear</a></li>
+                        <li><a class="dropdown-item" href="#">Uniforms</a></li>
+                        <li><a class="dropdown-item" href="#">Ethnic</a></li>
+                        <li><a class="dropdown-item" href="#">Vintage</a></li>
+                        <li><a class="dropdown-item" href="#">Hats & Caps</a></li>
                     </ul>
                   </li>
             </div>
+
+            <div class="col-3">
+                <li class="nav-item dropdown list-unstyled d-flex">
+                    <a class="nav-link headerLinks" onmouseover="openDropdownSale()"   href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       Sale
+                    </a>
+                    
+                  </li>
+            </div>
            
+            <ul class="dropdown-menu navDropdownMenus navSale" onmouseleave="closeDropdownSale()">
+                <li><a class="dropdown-item" href="#"><img src="https://theme644-clothes-free.myshopify.com/cdn/shop/products/bing_trim_fit_cotton_jersey_polo_1_255x.jpg?v=1553073349" alt=""></a></li>
+                <li><a class="dropdown-item" href="#"><img src="https://theme644-clothes-free.myshopify.com/cdn/shop/products/crewneck_sicoca_silk_blend_sweater_1_255x.jpg?v=1553073338" alt=""></a></li>
+                <li><a class="dropdown-item" href="#"><img src="https://theme644-clothes-free.myshopify.com/cdn/shop/products/illusion_yoke_lace_sheath_dress_1_255x.jpg?v=1553073332" alt=""></a></li>
+                <li><a class="dropdown-item" href="#"><img src="https://theme644-clothes-free.myshopify.com/cdn/shop/products/josefina_boyfriend_jeans_bright_light_broken_twill_1_255x.jpg?v=1553073326" alt=""></a></li>
+               
+              </ul>
+
         </div>
                  
              

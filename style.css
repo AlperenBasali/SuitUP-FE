@@ -172,9 +172,14 @@ body{
 }
 
 
-.headerLinks{
+.headerLinks1{
     font-size: 18px;
     color: #6fcfb8;
+    font-weight: 700;
+}
+.headerLinks{
+    font-size: 18px;
+    color: #999999;
     font-weight: 700;
 }
 
@@ -198,4 +203,23 @@ body{
 }
 .navDropdownMenus li a:hover{
     color: #6fcfb8;
+}
+
+.navSale{
+    border-radius: 0%;
+    padding: 1rem .5rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px .5px 5px; background-color: rgb(249,250,252);
+    background-color: #FFF;
+    width: 25%;
+    
+}
+
+.showSale{
+    display: flex;
+    width: 100%;
+    /* margin: 20px auto auto auto; */
+    position: absolute;
+    top: 60px;
+    justify-content: space-around;
 }

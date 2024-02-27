@@ -36,19 +36,35 @@ biSearchX.addEventListener("click",function(){
 //////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
 
-function openDropdown(){
-    navDropdownMenu = document.querySelector(".navDropdownMenus")
+function openDropdownHome(){
+    navDropdownMenu = document.querySelector(".navHome")
     navDropdownMenu.classList.add("show")
-   
 }
-
-function closeDropdown(){ //herhangi bir yere onclick="closeDropdown()" bunu ata
-
+function closeDropdownHome(){ //herhangi bir yere onclick="closeDropdown()" bunu ata
     timeoutId = setTimeout(function() {
-        
-        navDropdownMenu = document.querySelector(".navDropdownMenus")
+        navDropdownMenu = document.querySelector(".navHome")
         navDropdownMenu.classList.remove("show")
     }, 1000);
-    
 }
 
+function openDropdownCategories(){
+    navDropdownMenu = document.querySelector(".navCategories")
+    navDropdownMenu.classList.add("show")
+}
+function closeDropdownCategories(){ //herhangi bir yere onclick="closeDropdown()" bunu ata
+    timeoutId = setTimeout(function() {
+        navDropdownMenu = document.querySelector(".navCategories")
+        navDropdownMenu.classList.remove("show")
+    }, 1000);
+}
+
+function openDropdownSale(){
+    navDropdownMenu = document.querySelector(".navSale")
+    navDropdownMenu.classList.add("showSale")
+}
+function closeDropdownSale(){ //herhangi bir yere onclick="closeDropdown()" bunu ata
+    timeoutId = setTimeout(function() {
+        navDropdownMenu = document.querySelector(".navSale")
+        navDropdownMenu.classList.remove("showSale")
+    }, 1000);
+}
