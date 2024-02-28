@@ -84,7 +84,55 @@
             <div class="col-2">
                 <img src="https://theme644-clothes-free.myshopify.com/cdn/shop/files/logo_100x30_crop_center.png?v=1614290115" alt="">
             </div>
-            <div class="col-2">
+
+            <!-- MENU -->
+            <div class="col-2 navbar d-block d-lg-none">
+
+            
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span> <!-- BUTTON İLE OYNA -->
+          </button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+      
+
+
+            </div>
+            <!-- MENU -->
+
+
+            <div class="col-2 d-none d-lg-block ">
                 <li class="nav-item dropdown list-unstyled d-flex"style="position: relative; ">
                     <a class="nav-link headerLinks1" onclick="clickDropdownHome()" onmouseover="openDropdownHome()"   href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                        Home
@@ -96,7 +144,7 @@
                   </li>
             </div>
 
-            <div class="col-3">
+            <div class="col-3  d-none d-lg-block">
                 <li class="nav-item dropdown list-unstyled d-flex"style="position: relative; ">
                     <a class="nav-link headerLinks" onclick="clickDropdownCategories()" onmouseover="openDropdownCategories()"   href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                        Categories
@@ -115,7 +163,7 @@
                   </li>
             </div>
 
-            <div class="col-2">
+            <div class="col-2  d-none d-lg-block">
                 <li class="nav-item dropdown list-unstyled d-flex">
                     <a class="nav-link headerLinks" onclick="clickDropdownSale()" onmouseover="openDropdownSale()"   href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                        Sale
@@ -132,7 +180,7 @@
                
             </ul>
 
-            <div class="col-3">
+            <div class="col-3 ">
                 <li class="nav-item dropdown list-unstyled d-flex justify-content-end "style="position: relative; ">
                     <a class="nav-link headerLinks1" onclick="clickDropdownCart()" onmouseover="openDropdownCart()"   href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <span>
