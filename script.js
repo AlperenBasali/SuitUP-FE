@@ -39,7 +39,7 @@ function clickDropdownHome(){
     navDropdownMenu = document.querySelector(".navHome")
     navDropdownMenu.classList.add("show")
     navDropdownMenu.classList.remove("show")
-    // navDropdownMenu.classList.toggle("show")
+    navDropdownMenu.classList.toggle("show")
 }
 function openDropdownHome(){
     navDropdownMenu = document.querySelector(".navHome")
@@ -133,3 +133,26 @@ function closeDropdownCart(){ //herhangi bir yere onclick="closeDropdown()" bunu
     }, 1000);
 }
 //mobil görüntü
+
+
+function openBothOffcanvas() {
+    var offcanvasStart = new bootstrap.Offcanvas(document.querySelector('.offcanvasNavbarStart'));
+    var offcanvasEnd = new bootstrap.Offcanvas(document.querySelector('.offcanvasNavbarEnd'));
+
+    offcanvasStart.show();
+    offcanvasEnd.show();
+}
+
+function toggleBothOffcanvas() {
+    var offcanvasStart = new bootstrap.Offcanvas(document.querySelector('.offcanvasNavbarStart'));
+    var offcanvasEnd = new bootstrap.Offcanvas(document.querySelector('.offcanvasNavbarEnd'));
+
+  
+        // offcanvasStart.hide();
+        // offcanvasEnd.hide();
+        offcanvasStart.style.display ="none"
+        offcanvasEnd.style.display ="none"
+   
+        
+    
+}

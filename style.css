@@ -228,3 +228,33 @@ body{
     overflow-y: scroll;
     max-height: 80vh;
 }
+
+.hamburger{
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+    border-radius: 20%;
+}
+
+.navbar-toggler{
+    border: none;
+    outline: none;
+}
+.navbar-toggler:focus{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar{
+    --bs-navbar-padding-y: 0;
+    --bs-navbar-toggler-padding-y: 0;
+}
