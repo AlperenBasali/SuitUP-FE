@@ -135,6 +135,7 @@ function closeDropdownCart(){ //herhangi bir yere onclick="closeDropdown()" bunu
 //mobil görüntü
 
 
+
 function openBothOffcanvas() {
     var offcanvasStart = new bootstrap.Offcanvas(document.querySelector('.offcanvasNavbarStart'));
     var offcanvasEnd = new bootstrap.Offcanvas(document.querySelector('.offcanvasNavbarEnd'));
@@ -144,15 +145,24 @@ function openBothOffcanvas() {
 }
 
 function toggleBothOffcanvas() {
-    var offcanvasStart = new bootstrap.Offcanvas(document.querySelector('.offcanvasNavbarStart'));
-    var offcanvasEnd = new bootstrap.Offcanvas(document.querySelector('.offcanvasNavbarEnd'));
+    var offcanvasStart = new bootstrap.Offcanvas(document.getElementById('offcanvasNavbar'));
+    var offcanvasEnd = new bootstrap.Offcanvas(document.getElementById('offcanvasRight'));
+    var offcanvasBackdrops = document.querySelectorAll('.offcanvas-backdrop');
 
-  
-        // offcanvasStart.hide();
-        // offcanvasEnd.hide();
-        offcanvasStart.style.display ="none"
-        offcanvasEnd.style.display ="none"
-   
+    offcanvasStart.hide();
+    offcanvasEnd.hide();
+    
+    offcanvasBackdrops.forEach(function(offcanvasBackdrop) {
         
+        offcanvasBackdrop.classList.remove("show");
+    });
     
 }
+
+function extraClick(){
+    let offcanvasLeftClose = document.getElementById("offcanvasLeftClose")
+
+    offcanvasLeftClose.click()
+}
+
+//mobil görüntü

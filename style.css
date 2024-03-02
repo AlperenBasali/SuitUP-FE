@@ -258,3 +258,7 @@ body{
     --bs-navbar-padding-y: 0;
     --bs-navbar-toggler-padding-y: 0;
 }
+
+#offcanvasLeftClose{
+    visibility: hidden;
+}
