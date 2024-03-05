@@ -262,3 +262,58 @@ body{
 #offcanvasLeftClose{
     visibility: hidden;
 }
+
+/* .accordion-button::after{
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: "";
+    background-image: var(--bs-accordion-btn-icon);
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+
+    
+    
+} */
+/* Özel ikon */
+/* Bootstrap Icons kullanma */
+.accordion-button{
+    font-size: 100%;
+}
+.accordion-button::after {
+    content: ' \F659'; /* Bootstrap Icons'daki bir ikonun unicode değerini buraya ekleyin */
+    font-family: 'bootstrap-icons'; /* Font ailesi */
+    font-weight: 900; /* Font ağırlığı */
+    margin-left: auto; /* İkona boşluk eklemek için */
+    background-image: none;
+    transform: rotate(-45deg);
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image: none;
+    content: '\F2EA';
+    font-family: 'bootstrap-icons';
+    transform: rotate(180deg);
+    margin-left: auto;
+    margin-top: auto;
+    font-weight: 900;
+}
+
+.accordion{
+    --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+    --bs-accordion-btn-icon-transform: rotate(-45deg);
+    --bs-accordion-btn-icon-width: ;
+}
+
+.accordion-item{
+    border: 1px solid black;
+}
+
+
+.accordion-body-1,.accordion-body-2{
+    margin-bottom: 10px;
+}
+
+
