@@ -27,7 +27,7 @@
         </div>
     </div>
 
-    <div class="container-fluid container-xl ">
+    <div class="container-fluid container-xl " id="wishlistPart" style="margin-bottom: 10px;">
         <div class="row">
                 <div class="col-12 col-lg-4 orderOnline" id="searchBlock">
                     <span>ORDER ONLINE OR CALL US (1800) 000 8808</span>
@@ -78,7 +78,7 @@
         </div>
     </div>
 
-  <div class="bigContainer"style="width: 100%;box-shadow: rgba(0, 0, 0, 0.04) 0px .5px 5px; background-color: rgb(249,250,252);margin-top:10px ">
+  <div class="bigContainer"style="width: 100%;box-shadow: rgba(0, 0, 0, 0.04) 0px .5px 5px; background-color: rgb(249,250,252)">
     <div class="container-fluid container-xl ">
         <div class="row" style="padding: 18px 0;position: relative;">
             <div class="col-12 col-sm-2" style="display: flex;align-items: center;">
@@ -287,10 +287,43 @@
 </nav>
 
 
+<p style="height: 1000px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum vel doloribus eius molestiae dolores labore atque fugiat quod perspiciatis numquam beatae cupiditate accusamus, quam nemo dicta tempora ducimus accusantium a.
+Saepe ratione corrupti eius quod enim unde laudantium quibusdam fugiat, error perspiciatis ab ullam ipsum, amet repellendus animi nulla sit vel dolorum. Recusandae temporibus quibusdam illum ipsam tempore perferendis consequatur.
+Unde ex obcaecati minima aperiam quam voluptas. Suscipit tenetur consequatur ad eaque doloremque debitis voluptatum ducimus dicta eius, totam labore exercitationem architecto. Optio labore nobis consequatur reiciendis, dolorum ex ipsa.
+Quos ut nesciunt accusamus, voluptates minus quibusdam assumenda quam repellendus consectetur! Magni facilis tempora eum tenetur quod commodi provident deserunt cum vitae similique laborum ullam ex, sunt quas assumenda quaerat?
+Recusandae alias laborum, sunt ea, hic et tenetur repellendus cupiditate quam nulla distinctio ad impedit repellat, optio assumenda vel qui ut ipsum? Similique veniam ratione consequuntur sunt possimus. Facere, maxime!
+Maiores, possimus laudantium? Odit dolorum, ipsam qui facilis hic illum, eius architecto eaque magni quam ratione assumenda expedita vero recusandae id omnis, libero beatae minima dolore iure voluptate voluptas quia!
+Veniam nesciunt rerum a id libero, tempore fuga debitis cum consequuntur totam ullam, architecto ipsum quia repudiandae similique minus voluptate facilis. Quibusdam officia nihil ratione. Maxime laborum optio suscipit aliquid?
+Laborum voluptatem, numquam quis, corporis odit, accusantium optio illum voluptate fuga et animi aspernatur nostrum? Repellendus quo quod veniam omnis doloremque praesentium quibusdam nisi similique, animi quasi possimus dolore tenetur?
+Iusto atque voluptate error? Repellendus, sint mollitia temporibus omnis est veniam! Suscipit, ratione. Aliquid, nostrum inventore! Eum libero reiciendis voluptates, autem rem accusamus beatae nam commodi nulla ipsam? Repellendus, ducimus.
+Quidem eos, laboriosam quae animi consectetur unde molestiae explicabo minima, dolore, eum nemo? Saepe delectus asperiores non officiis magnam a neque maiores nesciunt? Repellat ut natus pariatur fuga est. Fugit!</p>
 
 
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="script.js"></script>
+
+<script>
+$(document).ready(function() {
+  var elementToHide = $("#wishlistPart"); // Replace with the actual selector for your element
+  var threshold = 50; // Adjust the threshold as needed (distance from top to trigger hiding)
+  var lastScrollTop = 0;
+
+  $(window).scroll(function() {
+    var currentScrollTop = $(window).scrollTop();
+
+    // Throttle the hiding action to prevent excessive checks and potential lag
+    if (Math.abs(lastScrollTop - currentScrollTop) > threshold) {
+      if (currentScrollTop > threshold) {
+        elementToHide.addClass("hidden");
+      } else {
+        elementToHide.removeClass("hidden");
+      }
+      lastScrollTop = currentScrollTop;
+    }
+  });
+});
+</script>
 </body>
 </html>
 

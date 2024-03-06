@@ -18,6 +18,17 @@ body{
 .container{
     --bs-gutter-x: 0;
 }
+nav{
+    
+    position: sticky;
+    top: 0;
+    z-index: 100000000000000000;
+    left: 0;
+}
+#wishlistPart.hide {
+    display: none;
+  }
+
 
 .navUp{
     background: url(https://theme644-clothes-free.myshopify.com/cdn/shop/t/2/assets/suitup_top_banner.png?v=11381325228835922861553076005) ;
@@ -317,3 +328,4 @@ body{
 }
 
 
+.hidden { display: none; /* Or other hiding styles */ }
