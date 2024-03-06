@@ -168,30 +168,3 @@ function extraClick(){
 //mobil görüntü
 
 
-// document.addEventListener("scroll", function() {
-//     let myElement = document.getElementById("wishlistPart");
-
-//     if (window.pageYOffset === 0 || window.scrollY === 0) {
-//         myElement.style.display = "block";
-//     } else {
-//         myElement.style.display = "none";
-//     }
-// });
-
-
-
-// const navbar = document.getElementById('wishlistPart');
-// let previousScrollY = window.scrollY;
-
-// window.addEventListener('scroll', () => {
-//   const currentScrollY = window.scrollY;
-//   const scrollDirection = currentScrollY > previousScrollY ? "down" : "up";
-
-//   if (scrollDirection === "down" && currentScrollY > 0) { // Hide after 50px scroll down
-//     navbar.classList.add('hide');
-//   } else if (scrollDirection === "up" || currentScrollY ===0) { // Show on scroll up or within 50px from top
-//     navbar.classList.remove('hide');
-//   }
-
-//   previousScrollY = currentScrollY;
-// });
