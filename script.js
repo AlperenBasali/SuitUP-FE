@@ -168,3 +168,75 @@ function extraClick(){
 //mobil görüntü
 
 
+
+function getDropdownPrice1(){
+    
+    let dropdownProduct1 = document.querySelector(".dropdownProduct1")
+    
+    
+    if (dropdownProduct1.style.display === "none" ){
+        dropdownProduct1.style.display = "block"
+    }
+   
+}
+function getoutDropdownPrice1(){
+    let dropdownProduct1 = document.querySelector(".dropdownProduct1")
+
+    if(dropdownProduct1.style.display ==="block"){
+        dropdownProduct1.style.display ="none"
+    }
+}
+
+function getDropdownPrice2(){
+    
+    let dropdownProduct2 = document.querySelector(".dropdownProduct2")
+    
+    
+    if (dropdownProduct2.style.display === "none" ){
+        dropdownProduct2.style.display = "block"
+    }
+   
+}
+function getoutDropdownPrice2(){
+    let dropdownProduct2 = document.querySelector(".dropdownProduct2")
+
+    if(dropdownProduct2.style.display ==="block"){
+        dropdownProduct2.style.display ="none"
+    }
+}
+
+function getDropdownPrice3(){
+    
+    let dropdownProduct3 = document.querySelector(".dropdownProduct3")
+    
+    
+    if (dropdownProduct3.style.display === "none" ){
+        dropdownProduct3.style.display = "block"
+    }
+   
+}
+function getoutDropdownPrice3(){
+    let dropdownProduct3 = document.querySelector(".dropdownProduct3")
+
+    if(dropdownProduct3.style.display ==="block"){
+        dropdownProduct3.style.display ="none"
+    }
+}
+
+function getDropdownPrice4(){
+    
+    let dropdownProduct4 = document.querySelector(".dropdownProduct4")
+    
+    
+    if (dropdownProduct4.style.display === "none" ){
+        dropdownProduct4.style.display = "block"
+    }
+   
+}
+function getoutDropdownPrice4(){
+    let dropdownProduct4 = document.querySelector(".dropdownProduct4")
+
+    if(dropdownProduct4.style.display ==="block"){
+        dropdownProduct4.style.display ="none"
+    }
+}

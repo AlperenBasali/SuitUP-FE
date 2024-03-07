@@ -226,11 +226,36 @@ nav{
 .showSale{
     display: flex;
     width: 100%;
-    /* margin: 20px auto auto auto; */
     position: absolute;
     top: 60px;
     justify-content: space-around;
 }
+.navDropdownMenus li{
+    justify-content: center;
+    display: flex;
+}
+
+.dropdownProduct{
+    margin: auto;   
+    position: absolute;
+    bottom: 35px;
+    text-align: center;
+    background-color: white;
+    padding: 1rem .5rem 0 .5rem;
+    
+}
+.ddP1{
+    font-size: 80%;   
+}
+.ddP2{
+    font-size: 70%;
+    margin-left: auto;
+}
+.ddP1:hover{
+    color: #6fcfb8;
+    cursor: pointer;
+}
+
 
 .navCart{
     overflow-y: scroll;
