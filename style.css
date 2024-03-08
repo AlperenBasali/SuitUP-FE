@@ -350,3 +350,44 @@ nav{
 }
 
 
+/* NAV DONE */
+.carousel-inner{
+    background-color: green;
+    
+}
+.carousel-item{
+    background-image: url( //theme644-clothes-free.myshopify.com/cdn/shop/files/01_1170x577_crop_center.jpg?v=1614290116 );
+    height: 584px;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.carousel-indicators{
+    left: auto;
+}
+.carousel-indicators button{
+    border-radius: 50%;
+    width: 10px !important;
+    height: 10px !important;
+    background-color: grey !important;
+    opacity: 100% !important;
+}
+.carousel-indicators button:first-child{
+    background-color: #6fcfb8 !important;
+}
+.carousel-indicators button:hover{
+    background-color: #6fcfb8 !important;
+}
+
+.carousel-control-next,.carousel-control-prev{
+    height: 30px;
+    width: 30px;
+    margin: auto;
+}
+
+
+
+.bi-arrow-right-short:hover,.bi-arrow-left-short:hover{
+    color: #6fcfb8 !important;
+}

@@ -323,17 +323,54 @@
     
 </nav>
 
+<section style="margin-top: 40px;">
+<div class="row container m-auto  ">
+  <div class="col-8 ">
 
-<p style="height: 1000px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum vel doloribus eius molestiae dolores labore atque fugiat quod perspiciatis numquam beatae cupiditate accusamus, quam nemo dicta tempora ducimus accusantium a.
-Saepe ratione corrupti eius quod enim unde laudantium quibusdam fugiat, error perspiciatis ab ullam ipsum, amet repellendus animi nulla sit vel dolorum. Recusandae temporibus quibusdam illum ipsam tempore perferendis consequatur.
-Unde ex obcaecati minima aperiam quam voluptas. Suscipit tenetur consequatur ad eaque doloremque debitis voluptatum ducimus dicta eius, totam labore exercitationem architecto. Optio labore nobis consequatur reiciendis, dolorum ex ipsa.
-Quos ut nesciunt accusamus, voluptates minus quibusdam assumenda quam repellendus consectetur! Magni facilis tempora eum tenetur quod commodi provident deserunt cum vitae similique laborum ullam ex, sunt quas assumenda quaerat?
-Recusandae alias laborum, sunt ea, hic et tenetur repellendus cupiditate quam nulla distinctio ad impedit repellat, optio assumenda vel qui ut ipsum? Similique veniam ratione consequuntur sunt possimus. Facere, maxime!
-Maiores, possimus laudantium? Odit dolorum, ipsam qui facilis hic illum, eius architecto eaque magni quam ratione assumenda expedita vero recusandae id omnis, libero beatae minima dolore iure voluptate voluptas quia!
-Veniam nesciunt rerum a id libero, tempore fuga debitis cum consequuntur totam ullam, architecto ipsum quia repudiandae similique minus voluptate facilis. Quibusdam officia nihil ratione. Maxime laborum optio suscipit aliquid?
-Laborum voluptatem, numquam quis, corporis odit, accusantium optio illum voluptate fuga et animi aspernatur nostrum? Repellendus quo quod veniam omnis doloremque praesentium quibusdam nisi similique, animi quasi possimus dolore tenetur?
-Iusto atque voluptate error? Repellendus, sint mollitia temporibus omnis est veniam! Suscipit, ratione. Aliquid, nostrum inventore! Eum libero reiciendis voluptates, autem rem accusamus beatae nam commodi nulla ipsam? Repellendus, ducimus.
-Quidem eos, laboriosam quae animi consectetur unde molestiae explicabo minima, dolore, eum nemo? Saepe delectus asperiores non officiis magnam a neque maiores nesciunt? Repellat ut natus pariatur fuga est. Fugit!</p>
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+      
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+      
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span  class="bi bi-arrow-left-short" aria-hidden="true" style="color: grey;"> </span>
+      <span class="visually-hidden">Previoues</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span  class="bi bi-arrow-right-short" aria-hidden="true" style="color: grey;"> </span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+ </div>
+ <div class="col-4 border border-danger "></div>
+</div>
+</section>
+
+
 
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -360,6 +397,32 @@ $(document).ready(function() {
     }
   });
 });
+
+
+// var isMouseDown = false;
+//     var startX;
+
+//     $(document).ready(function() {
+//         $('.carousel').on('mousedown', function(e) {
+//             isMouseDown = true;
+//             startX = e.pageX;
+//         });
+
+//         $(document).on('mouseup', function() {
+//             isMouseDown = false;
+//         });
+
+//         $(document).on('mousemove', function(e) {
+//             if (isMouseDown) {
+//                 var endX = e.pageX;
+//                 if (startX - endX > 50) {
+//                     $('.carousel').carousel('next');
+//                 } else if (endX - startX > 50) {
+//                     $('.carousel').carousel('prev');
+//                 }
+//             }
+//         });
+//     });
 </script>
 </body>
 </html>
