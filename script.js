@@ -240,3 +240,24 @@ function getoutDropdownPrice4(){
         dropdownProduct4.style.display ="none"
     }
 }
+
+
+
+// CAROUSEL
+// let carouselItem = document.querySelector(".carousel-item")
+// let carouselIndicatorsList = document.querySelectorAll('.carousel-indicators button.active[aria-current="true"]');
+// let carouselControlNext = document.querySelector(".carousel-control-next");
+
+// carouselControlNext.addEventListener("click", function () {
+//     // Tüm eşleşen öğeleri seç
+//     let carouselIndicatorsList = document.querySelectorAll('.carousel-indicators button[data-bs-target="#carouselExampleCaptions"]');
+
+//     // Tüm eşleşen öğeleri döngü ile kontrol et
+//     carouselIndicatorsList.forEach(function(carouselIndicators) {
+//         console.log("carouselIndicators");
+//         carouselIndicators.style.backgroundColor = "#6fcfb8";
+//         carouselIndicators.style.borderRadius = "0";
+//     });
+// });
+
+CAROUSEL İÇERİKLE DEVAM
