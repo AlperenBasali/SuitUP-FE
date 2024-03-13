@@ -296,22 +296,7 @@ nav{
     visibility: hidden;
 }
 
-/* .accordion-button::after{
-    flex-shrink: 0;
-    width: var(--bs-accordion-btn-icon-width);
-    height: var(--bs-accordion-btn-icon-width);
-    margin-left: auto;
-    content: "";
-    background-image: var(--bs-accordion-btn-icon);
-    background-repeat: no-repeat;
-    background-size: var(--bs-accordion-btn-icon-width);
-    transition: var(--bs-accordion-btn-icon-transition);
 
-    
-    
-} */
-/* Özel ikon */
-/* Bootstrap Icons kullanma */
 .accordion-button{
     font-size: 100%;
 }
@@ -388,3 +373,64 @@ nav{
     color: #6fcfb8 !important;
 }
 
+
+/* carousel içerik */
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20%;
+    left: 0;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 2rem;
+    color: black;
+    text-align: center;
+    width: 50%;
+}
+.carousel-caption h5{
+    font-size: 300%;
+    font-weight: 300;
+}
+.carousel-caption p{
+    color: #6fcfb8;
+    font-weight: 600;
+    padding-bottom: .5rem;
+}
+.carousel-caption button{
+    background-color: #6fcfb8;
+    color: white;
+    font-weight: 500;
+    padding: .6em 1em;
+}
+/* ANIMATION */
+
+.carouselAnm{
+    position:relative;
+    top:0; bottom:0; right:0;
+    width:100%;
+    animation: cc 5s ease-in alternate infinite;
+}
+
+@keyframes cc {
+    0% {
+   
+    opacity: 100%;
+    }
+    40%{
+    
+    opacity: 0%;
+    }
+    60% {
+    
+    opacity: 0%;
+    }
+    100% {
+    
+    opacity: 100%;
+    }
+}
+
+
+
+  /* ANIMATION */
