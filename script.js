@@ -244,3 +244,17 @@ function getoutDropdownPrice4(){
 
 
 // CAROUSEL
+
+let carouselDivSecondContent = document.querySelector(".carouselDivSecondContent")
+let carouselDivSecondContenth3 = document.querySelector(".carouselDivSecondContent h4")
+
+function carouselDivSecondContenthover(){
+    if(carouselDivSecondContent.style.backgroundColor = "#383838"){
+        carouselDivSecondContenth3.style.color = "white"
+    }
+}
+function carouselDivSecondContentexit(){
+    if(carouselDivSecondContent.style.backgroundColor = "white"){
+        carouselDivSecondContenth3.style.color = "black"
+    }
+}

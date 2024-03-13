@@ -19,10 +19,9 @@ body{
     --bs-gutter-x: 0;
 }
 nav{
-    
-    position: sticky;
+    position: static;
     top: 0;
-    z-index: 100000000000000000;
+    z-index: 100;
     left: 0;
 }
 .hidden{ display: none;}
@@ -342,10 +341,11 @@ nav{
 }
 .carousel-item{
     background-image: url( //theme644-clothes-free.myshopify.com/cdn/shop/files/01_1170x577_crop_center.jpg?v=1614290116 );
-    height: 584px;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    background-position: 50% 50%;
+    padding: 66.323% 0 0;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 .carousel-indicators{
     left: auto;
@@ -405,7 +405,7 @@ nav{
 }
 /* ANIMATION */
 
-.carouselAnm{
+/* .carouselAnm{
     position:relative;
     top:0; bottom:0; right:0;
     width:100%;
@@ -429,8 +429,94 @@ nav{
     
     opacity: 100%;
     }
-}
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+} */
 
 
 
   /* ANIMATION */
+
+.carouselDivSecond{
+    
+    background-color: red;
+    width: 80%;
+    height: 345px;
+   
+    position: relative;
+
+}
+  .carouselDivSecondImg{
+    background-image: url(https://theme644-clothes-free.myshopify.com/cdn/shop/files/030_270x330_crop_top.png?v=1614290116);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .carouselDivSecondContent{
+    width: 90%;
+    /* height: 20%; */
+    background-color: white;
+    padding: .6rem 1rem;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    right: 0;
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+  }
+  .carouselDivSecondContent h4,.carouselDivSecondContent h3{
+    font-size: 80%;
+    /* line-height: .1; */
+    margin-bottom: 0;
+  }
+  .carouselDivSecondContent h3{
+    color: #6fcfb8;
+  }
+.carouselDivSecondContent:hover{
+    background-color: #383838;
+    transition: .3s;
+}
+  .carouselDivThird{
+    background-color: #6fcfb8;
+    width: 80%;
+    height: 200px;
+    margin-left: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .carouselDivThirdContent{
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+    width: 70%;
+    text-align: center;
+  }
+  .carouselDivThirdContent:hover{
+    color: black;
+    transition: .3s;
+  }
+
+  @media screen and (min-width:576px){
+    nav{
+        position: sticky;
+    }
+  }
+
+  @media screen and (max-width:1200px) {
+    .carouselDivSecond,.carouselDivThird{
+        height: 300px;
+    }
+  }
+  @media screen and (max-width:576px) {
+    #carouselSmall{
+        font-size: 50% ;
+    }
+  }
