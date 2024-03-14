@@ -504,6 +504,60 @@ nav{
     transition: .3s;
   }
 
+
+  /* SECTION2 */
+  .categoriesSec .categoriesDiv{
+    background-color: white;
+    padding: 1rem;
+  }
+  .categoriesSec .categoriesDiv ul li{
+    border-bottom: 1px solid rgb(242,242,242);
+    padding: .3rem 0;
+  }
+  .categoriesSec .categoriesDiv p{
+    color: #999999;
+    font-weight: 400;
+    font-size: 70%;
+  }
+  .categoriesSec .categoriesDiv ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 60%;
+    font-weight: 400;
+    transition: .3s;
+  }
+  .categoriesSec .categoriesDiv ul li a:hover{
+    color: #6fcfb8;
+    transition: .3s;
+  }
+
+  .catDivs div{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+/* TEK ÇİFT ÇOCUK ALARAKYAP */
+.catDivs div span{
+  position: absolute;
+  top: 15px;
+    left: 15px;
+    font-weight: 500;
+    font-size: 85%;
+    width: 30px;
+  }
+
+  .firstCat{
+    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/files/collection01_270x255_crop_center.jpg?v=1614290116);
+    transition: 1s;
+}
+.firstCat:hover{
+      background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/files/collection02_270x255_crop_center.jpg?v=1614290116);
+      transition: 1s;
+
+  }
+
   @media screen and (min-width:576px){
     nav{
         position: sticky;
@@ -518,5 +572,6 @@ nav{
   @media screen and (max-width:576px) {
     #carouselSmall{
         font-size: 50% ;
+        
     }
   }
