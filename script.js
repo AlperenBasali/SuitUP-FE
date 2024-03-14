@@ -258,3 +258,34 @@ function carouselDivSecondContentexit(){
         carouselDivSecondContenth3.style.color = "black"
     }
 }
+
+
+// Tüm divleri seç
+let divs = document.querySelectorAll(".catDiv1 .col-3");
+
+// Her bir div için işlem yap
+divs.forEach((div, index) => {
+    // Eğer sıra numarası tek ise
+    if (index % 2 === 0) {
+        // Tek olan divlere burada özellikler ekleyebilirsiniz
+        div.style.color = "black";
+    } else {
+        // Çift olan divlere burada farklı özellikler ekleyebilirsiniz
+        div.style.color = "#6fcfb8";
+    }
+});
+
+// Tüm divleri seç
+let divs2 = document.querySelectorAll(".catDiv2 .col-3");
+
+// Her bir div için işlem yap
+divs2.forEach((div, index) => {
+    // Eğer sıra numarası tek ise
+    if (index % 2 != 0) {
+        // Tek olan divlere burada özellikler ekleyebilirsiniz
+        div.style.color = "black";
+    } else {
+        // Çift olan divlere burada farklı özellikler ekleyebilirsiniz
+        div.style.color = "#6fcfb8";
+    }
+});

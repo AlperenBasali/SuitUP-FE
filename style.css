@@ -538,6 +538,9 @@ nav{
     background-position: center;
     height: 250px;
 }
+.catDivs .col-3{
+    cursor: pointer;
+}
 /* TEK ÇİFT ÇOCUK ALARAKYAP */
 .catDivs div span{
   position: absolute;
@@ -546,6 +549,7 @@ nav{
     font-weight: 500;
     font-size: 85%;
     width: 30px;
+
   }
 
   .firstCat{
@@ -557,8 +561,65 @@ nav{
       transition: 1s;
 
   }
+  .secCat{
+      background-image: url( //theme644-clothes-free.myshopify.com/cdn/shop/files/collection022_270x255_crop_center.png?v=1614290117 );
+      transition: 1s;
+    }
+    .secCat:hover{
+      background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/files/collection21_270x255_crop_center.jpg?v=1614290117);
+    transition: 1s;
+  }
+  .thirdCat{
+      background-image: url( //theme644-clothes-free.myshopify.com/cdn/shop/files/collection012_270x255_crop_center.jpg?v=1614290117 );
+      transition: 1s;
+    }
+    .thirdCat:hover{
+      background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/files/collection22_270x255_crop_center.jpg?v=1614290117);
+    transition: 1s;
+  }
+  .forthCat{
+      background-image: url( //theme644-clothes-free.myshopify.com/cdn/shop/files/collection013_-_Copy_270x255_crop_center.jpg?v=1614290117 );
+      transition: 1s;
+    }
+    .forthCat:hover{
+      background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/files/collection013_270x255_crop_center.jpg?v=1614290117);
+    transition: 1s;
+  }
+  .fifthCat{
+    background-image: url( //theme644-clothes-free.myshopify.com/cdn/shop/files/collection014_270x255_crop_center.jpg?v=1614290117 );
+    transition: 1s;
+  }
+  .fifthCat:hover{
+    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/files/collection24_270x255_crop_center.jpg?v=1614290117);
+    transition: 1s;
+  }
+  .sixthCat{
+    background-image: url( //theme644-clothes-free.myshopify.com/cdn/shop/files/collection015_270x255_crop_center.jpg?v=1614290117 );
+    transition: 1s;
+  }
+  .sixthCat:hover{
+    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/files/collection25_270x255_crop_center.jpg?v=1614290117);
+    transition: 1s;
+  }
 
-  @media screen and (min-width:576px){
+
+.categoriesAccordionSec2{
+    color: #999999;
+    font-size: 70%;
+    font-weight: 500;
+}
+.accordionSec2 ul li{
+    border-bottom: 1px solid rgb(242,242,242);
+    padding: .3rem 0;
+}
+.accordionSec2 ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 70%;
+   
+}
+
+  @media screen and (min-width:992px){
     nav{
         position: sticky;
     }
