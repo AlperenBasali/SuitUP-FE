@@ -403,42 +403,7 @@ nav{
     font-weight: 500;
     padding: .6em 1em;
 }
-/* ANIMATION */
 
-/* .carouselAnm{
-    position:relative;
-    top:0; bottom:0; right:0;
-    width:100%;
-    animation: cc 5s ease-in alternate infinite;
-}
-
-@keyframes cc {
-    0% {
-   
-    opacity: 100%;
-    }
-    40%{
-    
-    opacity: 0%;
-    }
-    60% {
-    
-    opacity: 0%;
-    }
-    100% {
-    
-    opacity: 100%;
-    }
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(5deg); }
-    50% { transform: rotate(0deg); }
-    75% { transform: rotate(-5deg); }
-    100% { transform: rotate(0deg); }
-} */
-
-
-
-  /* ANIMATION */
 
 .carouselDivSecond{
     
@@ -541,7 +506,7 @@ nav{
 .catDivs .col-3{
     cursor: pointer;
 }
-/* TEK ÇİFT ÇOCUK ALARAKYAP */
+
 .catDivs div span{
   position: absolute;
   top: 15px;
@@ -618,6 +583,251 @@ nav{
     font-size: 70%;
    
 }
+
+
+
+/* POPULARPRODUCTS */
+.popularProducts p{
+    margin: auto;
+    padding: 2rem;
+    font-weight: 500;
+}
+.popularProducts .col-2{
+    width: 22%;
+}
+.popularProducts .col-2 div:first-child{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    cursor: pointer;
+}
+.popularFirst{
+    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/classic_fit_three-piece_check_suit_1_270x341_crop_top.jpg?v=1553073344);
+    transition: 1s;
+    /* position: relative; */
+}
+.popularFirst:hover{
+    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/classic_fit_three-piece_check_suit_2_270x341_crop_top.jpg?v=1553073344);
+    transition: 1s;
+}
+.popularFirst div{
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    
+}
+.popularFirst div span{
+    font-size: 50%;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #383838;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.popularFirstInclude a{
+    color: black;
+    text-decoration: none;
+    font-size: 60%;
+    font-weight: 400;
+    transition: .3s;
+}
+.popularFirstInclude div{
+    font-size: 60%;
+    color: red;
+    display: flex;
+    justify-content: space-between;
+}
+.popularFirstInclude div div span:nth-child(1){
+    width: 15px;
+    height: 15px;
+    background-color: rgb(102, 100, 100);
+    border-radius: 50%;
+    border: 1px solid grey;
+    /* margin-left: 3px; */
+    margin-right: 5px;
+}
+.popularFirstInclude div div span:nth-child(2){
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    border: 1px solid grey;
+    /* margin-left: 3px; */
+    margin-right: 5px;
+}
+.popularFirstInclude div div span:nth-child(3){
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    border: 1px solid grey;
+    /* margin-left: 3px; */
+    margin-right: 5px;
+}
+
+.popularChooseVariant a{
+    color: black;
+    text-decoration: none;
+    font-size: 60%;
+}
+.popularChooseVariant a span,.popularChooseVariant a i{
+    font-weight: 400;
+}
+.popularChooseVariant div i {
+    color: #999999;
+    transition: .3s;
+}
+
+.popularFirstInclude a:hover,.popularChooseVariant a:hover,.popularChooseVariantR a i:hover{
+    color:#6fcfb8;
+    transition: .3s;
+}
+
+.popularSec{
+    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/crewneck_sicoca_silk_blend_sweater_1_270x341_crop_top.jpg?v=1553073338);
+    transition: 1s;
+    /* position: relative; */
+}
+.popularSec:hover{
+    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/crewneck_sicoca_silk_blend_sweater_2_270x341_crop_top.jpg?v=1553073338);
+    transition: 1s;
+}
+.popularSec div:first-child{
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    
+}
+.popularSec div:last-child{
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    
+}
+.popularSec div:first-child span{
+    font-size: 50%;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #383838;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.popularSec div:last-child span{
+    font-size: 50%;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #ee5757;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.popularThird{
+    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/illusion_yoke_lace_sheath_dress_1_270x341_crop_top.jpg?v=1553073332);
+    transition: 1s;
+    /* position: relative; */
+}
+.popularThird:hover{
+    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/illusion_yoke_lace_sheath_dress_2_270x341_crop_top.jpg?v=1553073332);
+    transition: 1s;
+}
+.popularThird div:first-child{
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    
+}
+.popularThird div:last-child{
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    
+}
+.popularThird div:first-child span{
+    font-size: 50%;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #383838;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.popularThird div:last-child span{
+    font-size: 50%;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #ee5757;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.popularFourth{
+    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/josefina_boyfriend_jeans_bright_light_broken_twill_1_270x341_crop_top.jpg?v=1553073326);
+    transition: 1s;
+    /* position: relative; */
+}
+.popularFourth:hover{
+    background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/josefina_boyfriend_jeans_bright_light_broken_twill_2_270x341_crop_top.jpg?v=1553073326);
+    transition: 1s;
+}
+.popularFourth div:first-child{
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    
+}
+.popularFourth div:last-child{
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    
+}
+.popularFourth div:first-child span{
+    font-size: 50%;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #383838;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.popularFourth div:last-child span{
+    font-size: 50%;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #ee5757;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+
 
   @media screen and (min-width:992px){
     nav{
