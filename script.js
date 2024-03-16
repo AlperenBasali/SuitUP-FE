@@ -260,32 +260,70 @@ function carouselDivSecondContentexit(){
 }
 
 
-// Tüm divleri seç
+
 let divs = document.querySelectorAll(".catDiv1 .col-3");
 
-// Her bir div için işlem yap
 divs.forEach((div, index) => {
-    // Eğer sıra numarası tek ise
+   
     if (index % 2 === 0) {
-        // Tek olan divlere burada özellikler ekleyebilirsiniz
+       
         div.style.color = "black";
     } else {
-        // Çift olan divlere burada farklı özellikler ekleyebilirsiniz
+       
         div.style.color = "#6fcfb8";
     }
 });
 
-// Tüm divleri seç
+
 let divs2 = document.querySelectorAll(".catDiv2 .col-3");
 
-// Her bir div için işlem yap
+
 divs2.forEach((div, index) => {
-    // Eğer sıra numarası tek ise
+    
     if (index % 2 != 0) {
-        // Tek olan divlere burada özellikler ekleyebilirsiniz
+      
         div.style.color = "black";
     } else {
-        // Çift olan divlere burada farklı özellikler ekleyebilirsiniz
+      
         div.style.color = "#6fcfb8";
     }
 });
+
+
+
+let hardOneButton = document.querySelector(".hardOneButton")
+
+function hardOneHover(){
+
+    hardOneButton.insertAdjacentHTML("afterbegin"," <a class='hardOneButtonInclude' href='#'><img src='//theme644-clothes-free.myshopify.com/cdn/shop/products/mixed_media_top_1_80x100_crop_top.jpg?v=1553073315' alt=''><p>Mixed Media Top</p><h5>$265.00</h5></a>")
+
+}
+
+function hardOneLeave(){
+    hardOneButton.innerHTML = " <a class='hardOneButtonPlus' href=''><i class='bi bi-plus'></i></a>"
+}
+
+
+let hardOneButton2 = document.querySelector(".hardOneButton2")
+
+function hardOneHover2(){
+
+    hardOneButton2.insertAdjacentHTML("afterbegin"," <a class='hardOneButtonInclude' href='#'><img src='//theme644-clothes-free.myshopify.com/cdn/shop/products/sloane_crewneck_cashmere_sweater_1_80x100_crop_top.jpg?v=1553073276' alt=''><p>Sloane Crewneck Cashmere Sweater</p><h5>$110.00</h5></a>")
+
+}
+
+function hardOneLeave2(){
+    hardOneButton2.innerHTML = " <a class='hardOneButtonPlus' href=''><i class='bi bi-plus'></i></a>"
+}
+let hardOneButton3 = document.querySelector(".hardOneButton3")
+
+function hardOneHover3(){
+
+    hardOneButton3.insertAdjacentHTML("afterbegin"," <a class='hardOneButtonInclude3' href='#'><img src='//theme644-clothes-free.myshopify.com/cdn/shop/products/the_lux_tailored_straight_leg_pants_1_80x100_crop_top.jpg?v=1553073268' alt=''><p>The Lux' Tailored Straight Leg Pants</p><h5>$340.00</h5></a>")
+
+}
+
+function hardOneLeave3(){
+    hardOneButton3.innerHTML = " <a class='hardOneButtonPlus' href=''><i class='bi bi-plus'></i></a>"
+}
+
