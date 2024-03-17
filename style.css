@@ -593,13 +593,13 @@ nav{
     font-weight: 500;
 }
 
-.popularProducts .col-2 div:first-child{
+.popularProducts .col-2 div:first-child,.seasonDiv:first-child{
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 300px;
     cursor: pointer;
+    height: 300px;
 }
 .popularFirst{
     background-image: url(//theme644-clothes-free.myshopify.com/cdn/shop/products/classic_fit_three-piece_check_suit_1_270x341_crop_top.jpg?v=1553073344);
@@ -916,6 +916,29 @@ nav{
     color: black;
     padding: .5rem;
 }
+
+/* ////////////////////////////////////////////// */
+/* SEASONSECTION */
+.seasonSection{
+    background-color: white;
+
+}
+.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
+
+    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+        .MultiCarousel .MultiCarousel-inner .item { float: left;}
+        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
+     .leftLst,  .rightLst { position:absolute; border-radius:50%;top:0; }
+    .MultiCarousel .leftLst { right:40px;color: grey;}
+    .MultiCarousel .rightLst { right:0;color: grey; }
+    .MultiCarousel .leftLst:focus { color: #6fcfb8;}
+    .MultiCarousel .rightLst:focus { color: #6fcfb8; }
+    .MultiCarousel p:first-child{
+        font-weight: 600;
+    }
+    
+        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#6fcfb8;opacity: .5; }
+        
 
 
 
